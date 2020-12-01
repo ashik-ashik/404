@@ -1,0 +1,85 @@
+/*<!--For X-small device-->*/
+
+@media (max-width: 767px) {
+    .error .sky .h404{
+        font-size: 7em;
+        padding-top: 70px;
+    }
+    @keyframes anima404{
+        0%, 100%{
+            transform: translateY(-10px);
+        }
+        50%{
+            transform: translateY(10px);
+        }
+    }
+    .sky .plane1{
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+    .sky .plane2{
+        top: 10px;
+    }
+    .filed h2{
+        font-size: 20px !important;
+    }
+}
+
+
+/*<!--For small device-->*/
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .error .sky .h404{
+        font-size: 10em;
+        padding-top: 70px;
+    }
+    @keyframes anima404{
+        0%, 100%{
+            transform: translateY(-15px);
+        }
+        50%{
+            transform: translateY(15px);
+        }
+    }
+    .sky .plane1{
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+    .sky .plane2{
+        top: 15px;
+    }
+    .filed h2{
+        font-size: 20px !important;
+    }
+}
+
+
+/*<!--For medium device-->*/
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .error .sky .h404{
+        font-size: 14em;
+    }
+    @keyframes anima404{
+        0%, 100%{
+            transform: translateY(-20px);
+        }
+        50%{
+            transform: translateY(20px);
+        }
+    }
+}
+
+
+/*<!--For Large device-->*/
+
+@media (min-width:1200px) {
+   
+    .error .sky .h404{
+        font-size: 16em;
+    }
+    
+}
+

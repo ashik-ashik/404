@@ -1,0 +1,84 @@
+
+
+h2{
+    font-family: consolas;
+}
+.error{
+    min-height: 100vh;
+    background: linear-gradient(0deg, #fff, #0373f4);
+}
+
+.error .sky{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    
+}
+.error .sky .h404{
+    font-size: 14em;
+    color: #fff;
+    text-shadow: 15px 15px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 900;
+}
+.error .sky .h404 span{
+    display: inline-block;
+    animation: anima404 2s ease-in-out infinite;
+    padding: 0px 10px;
+}
+.error .sky .h404 span:nth-child(even){
+    animation-delay: -1s;
+}
+@keyframes anima404{
+    0%, 100%{
+        transform: translateY(-24px);
+    }
+    50%{
+        transform: translateY(24px);
+    }
+}
+.sky .plane1{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: auto;
+}
+.sky .plane2{
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    max-width: 100px;
+    transition: ease-in-out .4s;
+    animation: flyPlane 5s linear infinite alternate;
+}
+@keyframes flyPlane{
+    form{
+        right:0px;
+    }
+    to{
+        right:50%;
+    }
+    
+}
+.error .filed{
+    height: 40vh;
+    background: linear-gradient( #6a2308,  #be400e);
+    box-shadow: inset 0 20px 10px #51680c;
+}
+.sky .grass{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background: url(../img/grass.png);
+    background-repeat: repeat-x;
+    animation: grass 0.3s linear infinite;
+}
+@keyframes grass{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 94px 0;
+    }
+}
