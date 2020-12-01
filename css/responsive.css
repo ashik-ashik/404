@@ -13,7 +13,7 @@
             transform: translateY(10px);
         }
     }
-    .sky .plane1{
+    .sky .big-plane{
         position: absolute;
         top: 50px;
         right: 10px;
@@ -42,7 +42,7 @@
             transform: translateY(15px);
         }
     }
-    .sky .plane1{
+    .sky .big-plane{
         position: absolute;
         top: 50px;
         right: 10px;
