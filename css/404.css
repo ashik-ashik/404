@@ -1,9 +1,10 @@
 
 
 h2{
-    font-family: consolas;
+    font-family: 'consolas';
 }
 .error{
+    overflow: hidden;
     min-height: 100vh;
     background: linear-gradient(0deg, #fff, #0373f4);
 }
@@ -36,26 +37,81 @@ h2{
         transform: translateY(24px);
     }
 }
-.sky .plane1{
+.sky .big-plane{
     position: absolute;
     top: 100px;
     right: 20px;
     width: auto;
+    transform: rotateZ(6deg);
 }
-.sky .plane2{
+.sky .big-plane .light{
     position: absolute;
-    top: 47px;
+    top: 0;
+    right: 7px;
+    width: 13px;
+    height: 13px;
+    background: #ff0000;
+    animation: light 3s linear infinite;
+}
+@keyframes light{
+    0%, 100%{
+        background: #ffe605;
+}
+    50%{
+        background: #ff0101;
+}
+    55%{
+        background: #ffe605;
+}
+    60%{
+        background: #ff0101;
+}
+    90%{
+        background: #01ff38;
+}
+    95%{
+        background: #ff0101;
+}
+}
+.sky .plane2,
+.sky .plane4,
+.sky .plane3{
+    position: absolute;
+    bottom: 10%;
     right: 0px;
     max-width: 100px;
     transition: ease-in-out .4s;
-    animation: flyPlane 5s linear infinite alternate;
+    animation: flyPlane 7s linear infinite ;
+    
 }
+.sky .plane3{
+    animation-delay: -2.5s;
+}
+.sky .plane4{
+    animation-delay: -5.5s;
+}
+.sky .flying img{
+    width: 100%;
+}
+
 @keyframes flyPlane{
-    form{
-        right:0px;
+    0%{
+    transform: rotateZ(0deg);
+    right:0px;
+        bottom: 1%;
     }
-    to{
-        right:50%;
+    15%{
+    transform: rotateZ(5deg);
+    right:15%;
+        bottom: 2%;
+    }
+    55%{
+    transform: rotateZ(14deg);
+    }
+    100%{
+    transform: rotateZ(20deg);
+    right:150%;
+        bottom: 140%;
     }
     
 }
